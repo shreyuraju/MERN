@@ -19,7 +19,12 @@
 </form>
 <hr/>
 
-<p id="output"></p>
+<p id="output"></p><br/><br/>
+<input type="button" style="font-size: large;" value="obj" onclick="obj();"/><br/><br/><br/>
+
+<input type="button" style="font-size: large;" value="While" onclick="whileLoop();"/><br/><br/><br/>
+
+<input type="button" style="font-size: large;" value="ifelseCondition" onclick="ifelseCondition();"/><br/><br/><br/>
 
 
 <script>
@@ -40,11 +45,15 @@
     function add() {
         var a = document.getElementById("text1").value;
         var b = document.getElementById("text2").value;
-        a = parseInt(a);
-        b = parseInt(b);
-        console.log(a+b);
+        if (isNaN(a) || isNaN(b)){
+            console.log("Need value to add")
+        } else {
+            a = parseInt(a);
+            b = parseInt(b);
+            console.log(a+b);
+        }
     }
-
+function obj() {
     var obj = { 
         name : "RAMA",
         age : 25,
@@ -58,7 +67,25 @@
     }
     console.log(obj.nestedobj.name);
     document.getElementById("output").innerHTML = obj.name;
+}
+function whileLoop() {
+    let text = "";
+    let i=0;
+    while (i<10) {
+        text += "The number is :" +i+"\n";
+        i++;
+    }
+    console.log(text);
+}
 
+function ifelseCondition() {
+    let a = 10;
+    if (a) {
+        alert("a is TRUE");
+    } else {
+        alert("a is FALSE")
+    }
+}
 </script>
         
 </body>

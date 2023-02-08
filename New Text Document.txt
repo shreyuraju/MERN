@@ -7,3 +7,33 @@ nvm use <version>: Switch to use the specified version.
 in object key shld be Unique
 
 
+if ther is an error of authorization, run this 3 cmds in terminal
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+//creating react app                       //if you have already has folder go inside and run this cmd
+1. npx create-react-app reactapp      ||    npm install
+
+2. npm react-router-dom --force
+
+//to run react-app change directory to appfolder
+
+3. npm start
+
+
+
+
+//JXS tags are used in return function in App.js
+
+
+//creating new component
+
+create file as filename.jsx
+type rfc (react functional component) and ENTER
+
+
+
+
+
