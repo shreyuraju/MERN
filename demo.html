@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>DEMO</title>
+</head>
+<body>
+    <h1 style="font-size: 16;"> DEMO HTML </h1><br/>
+    <h2 style="font-size: 16;"> DEMO HTML </h2><br/>
+    <h3 style="font-size: 16;"> DEMO HTML </h3><br/>
+    <hr color="red"/>
+
+    <a href="test.html" style="text-decoration:none;"><h1>click me</h1></a>
+
+    <input type="button" style="font-size: large;" value="register" onclick="loop();"/><br/><br/><br/>
+    <hr style="margin: 10px;"/>
+<form>
+    Text1: <input type="text" id="text1" /><br/><br/>
+    Text2: <input type="text" id="text2" /><br/><br/>
+    <input type="button"  value="add" onclick="add();"/>
+</form>
+<hr/>
+
+<p id="output"></p>
+
+
+<script>
+    function register(){
+        alert('HELLO WORLD');
+    }
+    var a=[1,2,3,4,5,6,7,8,9]
+    function loop(){
+        for (i=0; i<a.length; i+=3) {
+           // if(a[i]==3 || a[i]==6)
+                console.log(a[i]);
+        }
+        console.log("Length of Array :"+a.length);
+        console.log("3rd element :"+a[2]);
+        console.log("index VALUE of 4:" + a.indexOf(4));
+    }
+
+    function add() {
+        var a = document.getElementById("text1").value;
+        var b = document.getElementById("text2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        console.log(a+b);
+    }
+
+    var obj = { 
+        name : "RAMA",
+        age : 25,
+        address : "Mangalore",
+        //name : "Krishna"
+        nestedobj: {
+            name : "Krishna",
+            age : 23,
+            address : "Banthwala"
+        }
+    }
+    console.log(obj.nestedobj.name);
+    document.getElementById("output").innerHTML = obj.name;
+
+</script>
+        
+</body>
+</html>

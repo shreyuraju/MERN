@@ -1,0 +1,9 @@
+nvm install latest: To install the latest stable version
+
+nvm list available: Show a list of versions available for download.
+
+nvm use <version>: Switch to use the specified version.
+
+in object key shld be Unique
+
+
