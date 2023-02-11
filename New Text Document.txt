@@ -14,7 +14,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 //creating react app                       //if you have already has folder go inside and run this cmd
-1. npx create-react-app reactapp      ||    npm install
+1. npx create-react-app reactapp      ||    npm install //to download node_modules
 
 2. npm react-router-dom --force
 
@@ -22,6 +22,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 3. npm start
 
+//"npm i package-name"    it can be use to install
+//"npm uninstall package-name"    it can used to uninstall
 
 
 
@@ -34,6 +36,66 @@ create file as filename.jsx
 type rfc (react functional component) and ENTER
 
 
+//11/02/23
+tags shold have 1 parent element(tags), this we can use <></> & <div></div>
+we can add any tag to print
+
+//STYLING
+
+//inline styling and internal styling
+style={{backgroundColor:"red", color:"green"}}    
+
+//for internal
+const mystyle = {
+    color:"blue",
+    backgroundColor:"yellow"
+  }
+style={mystyle}
+
+for external
+we need to create .css file and import to app.js to use it
+import './extcss.css'
+
+className='name'   //inside tags
+
+if we want to import outside the folder we need to use ../folder-name/file-name
+
+//ALL FILE SHOULD BE IN "src" FOLDER
 
 
+ES6 is ECMaSCRIPT
 
+//creaeing classes in components, before the return function
+CLASS is a type of function
+rt default function Classes() {
+    class Car {
+        constructor(name) {                 //its a syntax method
+            this.brand=name;
+        }
+		Present() {                        //its a user defined method
+            return "My Bike is "+ this.name
+        }
+    }
+
+    const mycar = new Car("NISSAN");
+//inside reurn function
+{mycar.brand}
+
+//we can also create user function as mentioned above
+//for call the user function, in return function type
+
+{mybike.Present()}
+
+"  `   " //back click 
+we can use to print
+
+return `My Bike is ${this.name}`
+
+
+//inheritence
+
+//while coming on monday
+create new class as Vehicle
+print my new Vehicle is ...
+
+////////////////////////////
