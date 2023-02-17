@@ -22,15 +22,14 @@ export default function arrow() {
 
   // const Hello2 = () => "HELLO WORLD";
   // const Hello3 = val => "HELLO "+val;
-  const yourName = val => {return alert('My name is '+val+" Welcome");}
+  const yourName = val => {alert('Hello '+val+', Welcome');}
 
   return (
     <div>
-      <h1 style={{backgroundColor:'red', color:'white'}}>Arrow Function Start</h1>
+      <h1>Arrow Function Start</h1>
       <button onClick={()=>Click(name)}>Click-Here</button><br/><br/>
       <button onClick={()=>clickTo(name)}>Click-To</button><br/><br/>
       <button onClick={()=>Hello()}>Click-Here</button><br/><br/>
-
       <button onClick={()=>yourName('Shreyas')}>Click-To-Name</button><br/><br/>
     </div>
   )

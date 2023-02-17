@@ -4,6 +4,10 @@ import Arrow from './Arrow.jsx';
 import './extcss.css'
 import Classes from './Classes';
 import Test from './Test'
+import Variables from './Variables';
+import ArrayMethods from './ArrayMethods';
+import Destructuring from './Destructuring';
+import SpreadOperator from './SpreadOperator';
 
 function App() {
   const mystyle = {
@@ -42,6 +46,10 @@ function App() {
       <Classes/>
       <Arrow/>
       <Test/>
+      <Variables/>
+      <ArrayMethods/>
+      <Destructuring/>
+      <SpreadOperator/>
     </>
   );
 }

@@ -14,9 +14,9 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 //creating react app                       //if you have already has folder go inside and run this cmd
-1. npx create-react-app reactapp      ||    npm install //to download node_modules
+1. npx create-react-app reactapp      ||    npm install //to download node_modules || npm update
 
-2. npm react-router-dom --force
+2. npm react-router-dom --force       npm i --force
 
 //to run react-app change directory to appfolder
 
@@ -27,7 +27,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 
-//JXS tags are used in return function in App.js
+//JXS tags are used in return function in App.js  .jsx = javaScriptXML
 
 
 //creating new component
@@ -99,3 +99,136 @@ create new class as Vehicle
 print my new Vehicle is ...
 
 ////////////////////////////
+
+130223
+// VARIABLES
+//ARRAYMETHODS
+
+const myArray = ['Apple','Mango','Orange']
+
+    let mapfunc = myArray.map((item)=><p>{item}</p>)
+//in return write
+{mapfunc}
+
+
+//ordering
+<ol>{myArray.map((item)=><li>{item}</li>)}</ol>
+
+///////////////////////Map function VERY IMPORTANT///////////////////////////////////
+
+
+////////////////////////////////150223
+
+//Array of Objects to table
+let details = [
+      {name:"Rama", age:24},
+      {name:"Lakshmana", age:22},
+      {name:"Hanuma", age:45},
+      {name:"Ravana", age:35}
+    ]
+
+<table border="1px">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        
+        {details.map((item)=> {
+          return(
+            <tr><td>{item.name}</td><td>{item.age}</td></tr>
+          )
+        })}
+
+      </table>
+
+///Destrucuturing
+const cars = ['mustang','f-150','bmw'];
+
+    const car1 = cars[0]; //old method of Destrucuturing
+    const car2 = cars[1]; //old method of Destrucuturing
+    const car3 = cars[2]; //old method of Destrucuturing
+
+    const [car11, car22, car33] = cars; //new method of Destructuring
+
+//another example
+const vehicle = {
+      brand:'Ford',
+      model:'Mustang',
+      type:'car',
+      year:2021,
+      color:'red'
+    }
+
+    let msg;
+
+    myVehicle(vehicle);
+
+    function myVehicle({brand,model,type,color,year}) {
+      msg = 'My '+type+' is a '+color+' '+brand+' '+model+'.';
+    }
+
+//in return
+{msg} ///My car is a red Ford Mustang.
+
+//nested object
+const vehicleOne = {
+      brand:'Ford',
+      model:'Mustang',
+      type:'car',
+      year:2021,
+      color:'red',
+      registration :{
+        city:'Houston',
+        state:'Texas',
+        country:'USA'
+      }
+    }
+    var msgOne;
+    myVehicleOne(vehicleOne);
+
+    function myVehicleOne( {model, registration:{state} } ) {
+      msgOne = 'My '+model+' is registered in '+state+'.';
+    }
+
+//in return
+
+{msgOne}<br/>   //My Mustang is registered in Texas.
+
+
+//spread Operator (...)
+
+example
+const numOne = [1,2,3,4];
+  const numTwo = [5,6,7];
+  const numComb = [...numOne, ...numTwo];   //const numComb = [...numOne, ...numTwo, 8, 9, 10];
+						//1-10
+
+{numOne}<br/> //1234
+{numTwo}<br/> //567
+{numComb}<br/> //1234567
+
+//we can also do it for objects also
+const numbers = [1,2,3,4,5,6];
+const [one, two, ...three] = numbers; // decstructuring
+	{one}<br/> //1
+        {two}<br/> //2
+        {three}<br/> //3456
+
+
+//object
+  const myVehicle = {
+    brand:'Ford',
+    model:'Mustang',
+    color:'red'
+  }
+  const updateMyVehicle = {
+    type:'car',
+    year:2021,
+    color: 'yellow'
+  }
+
+  const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle};
+  console.log(myUpdatedVehicle);
+//FRIDAY TEST 
+
+classes, arrow, arrymethods, destructure, spread, 

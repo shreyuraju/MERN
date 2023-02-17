@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Classes() {
+    
     class Car {
         constructor(name) {
             this.brand=name;
@@ -124,7 +125,7 @@ export default function Classes() {
 
   return (
     <div>
-        <h1 style={{backgroundColor:'red', color:'white'}}>Classes Function Start</h1>
+        <h1>Classes Function Start</h1>
         {mycar.brand}<br/>
         {mybike.name="YAMAHA"}<br/>
         {myCycle.name="ATLAS"}<br/>
