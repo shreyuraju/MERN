@@ -8,6 +8,12 @@ import Variables from './Variables';
 import ArrayMethods from './ArrayMethods';
 import Destructuring from './Destructuring';
 import SpreadOperator from './SpreadOperator';
+import TernaryOperator from './TernaryOperator';
+import Imp from'./Imp';
+import JavascriptXML from './JavascriptXML';
+import Props from './Props'
+import Events from './Events'
+import Conditional from './Conditional'
 
 function App() {
   const mystyle = {
@@ -50,6 +56,12 @@ function App() {
       <ArrayMethods/>
       <Destructuring/>
       <SpreadOperator/>
+      <TernaryOperator/>
+      <Imp/>
+      <JavascriptXML/>
+      <Props/>
+      <Events/>
+      <Conditional/>
     </>
   );
 }

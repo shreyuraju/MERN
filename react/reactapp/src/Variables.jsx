@@ -10,13 +10,24 @@ export default function Variables() {
         alert('CALL')
     }
 
+    // let Name = "RAMA";
+
+    function Hello() {
+      let A=123;
+
+      return <h4>{A}</h4>
+    }
+    
   return (
     <div>
         <h1>Variables Start</h1>
         {x}<br/>
         {y}<br/>
         {z}<br/>
-        {/* <Call/> */}
+        <a onClick={()=>Call()}>Call</a><br/>
+        {/* {Name} */}
+        {Hello()}
+        
     </div>
   )
 }

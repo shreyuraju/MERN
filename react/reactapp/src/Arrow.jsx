@@ -18,19 +18,23 @@ export default function arrow() {
 
   let name = "RAMA"
 
-  const Hello = () => {return alert("Hello Hai"), alert("Hello Bye");}
+  const Hello = () => {return alert("Hello Hai"), alert("Hello Bye")}
 
   // const Hello2 = () => "HELLO WORLD";
   // const Hello3 = val => "HELLO "+val;
   const yourName = val => {alert('Hello '+val+', Welcome');}
 
+  let func;
+  func = () =>{alert('hello func');}
+
   return (
     <div>
       <h1>Arrow Function Start</h1>
-      <button onClick={()=>Click(name)}>Click-Here</button><br/><br/>
-      <button onClick={()=>clickTo(name)}>Click-To</button><br/><br/>
-      <button onClick={()=>Hello()}>Click-Here</button><br/><br/>
-      <button onClick={()=>yourName('Shreyas')}>Click-To-Name</button><br/><br/>
+      <button onClick={()=>Click(name)}>Click-Here</button><br/>
+      <button onClick={()=>clickTo(name)}>Click-To</button><br/>
+      <button onClick={()=>Hello()}>Click-Here</button><br/>
+      <button onClick={()=>yourName('Shreyas')}>Click-To-Name</button><br/>
+      <button onClick={()=>func()}>Click-func</button><br/>
     </div>
   )
 }

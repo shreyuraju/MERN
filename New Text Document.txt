@@ -1,3 +1,10 @@
+M : MongoDB
+E : Express.js
+R : React.js
+N : Node.js
+
+
+
 nvm install latest: To install the latest stable version
 
 nvm list available: Show a list of versions available for download.
@@ -232,3 +239,188 @@ const [one, two, ...three] = numbers; // decstructuring
 //FRIDAY TEST 
 
 classes, arrow, arrymethods, destructure, spread, 
+
+//17022023
+//////TernaryOperation
+
+let a = true
+a==true?alert('true'):alert('false')
+
+	{
+                a?
+                <h2 style={{color:'green'}}>a is true</h2>
+                :
+                <h2 style={{color:'red'}}>a is false</h2>
+            }
+
+///////export:
+there is 2 types
+named and defult
+
+////named export 
+//2 type
+ 
+1. inline induvidual export
+
+export let name="Mahadeva"
+export let age = 25
+
+export function Hello() {
+    alert('Hello Exp Function')
+}
+
+import { name, age, Hello } from './Exp'
+<h2>{name}</h2>
+        <h2>{age}</h2>
+        {Hello()}
+2. grouped export
+
+let address = "Magaluru"
+let phone = 234515
+export {address, phone}
+
+import { address, phone } from './Exp'
+<h2>{address}</h2>
+        <h2>{phone}</h2>
+
+/////we can't export the varialble if it's already exported before
+
+//default export
+let course;
+export default course = "React";
+
+import course from './Exp';
+<h2>{course}</h2>
+
+//we can use default keyword only once  in file
+//exporting Arrow function
+let defuncn;
+export  default defuncn = (name, clg) => {
+    alert(`My name is ${name}, and i'm from ${clg}`)
+}
+
+or
+
+const defuncn = (name, clg) => {
+    alert(`My name is ${name}, and i'm from ${clg}`)
+}
+export default defuncn;
+
+//we can't export multiple variable or functions
+
+import defuncn from './Exp';
+<button onClick={()=>defuncn('shreyas','Mite')}>click- me</button>
+
+
+
+//direct React
+//////we can write react inside html
+//CDN content deliever networks
+
+
+//////////////////ES6 : ECMAScript was created to standardize javascript
+features,
+classes 
+arrow func
+variables
+array methods
+destructuring
+modules
+
+
+
+//22022023
+
+"let" :> keyword is a block code keyword, it connot be called from outside the function
+
+//JSX  : javascriptXML
+
+
+
+//components are individual and reuable bits of code, they serve
+there are 2 type "rfc" % "rcc"
+
+
+//////////////////IMP//////IMP/////IMP/////
+//react props
+props are arguments passed into react components
+props are passed 
+
+function Hello(props) {
+    alert('This is the hello function, '+props.greet+' '+props.name);
+}
+const call = <Hello greet="Welcome" name="Rama"/>
+
+{call}
+
+
+    function Car(props) {
+        return <h2>I have {props.brand}, {props.year}</h2>
+    }
+
+    const value = "BMW"
+    const date = 2023
+    const myElement = <Car brand={value} year={date} />
+{myElement}
+
+    /////
+    function Hero(props) {
+        return <h2>I'm {props.brand}!</h2>
+    }
+
+    function Demo(props) {
+        return (
+            <>
+                <h2>Who is in my team</h2>
+                <Hero brand={props.id} />
+            </>
+        );
+    }
+<Demo id="Rama"/>
+
+
+///
+we can even pass list values also
+///////
+    function College (props) {
+        return <h3>I am {props.brand.name}, school is {props.brand.school} </h3>
+    }
+
+    function Students() {
+        const Details ={name:"Jack", school:"Aloy"}
+        return (
+            <>
+                <h3>who is admited</h3>
+                <College brand={Details} />
+            </>
+        );
+    }
+<Students/>
+
+//we can destructure the props using arry map attribute
+
+    const fruits = ["apple", "banana","orange","mango"];
+
+    const DisplayFruits = (props) => {
+        return (
+            <li>{props.item}</li>
+        );
+    }
+{fruits.map((val)=> <DisplayFruits item={val}/> )}
+
+
+
+/////print this using 
+i have 4 fruits
+They are
+1. apple
+2. banana
+3. orange
+4. mango
+
+
+
+/////////React Events
+
+///react conditional render
+
