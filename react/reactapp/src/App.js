@@ -1,19 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Arrow from './Arrow.jsx';
 import './extcss.css'
-import Classes from './Classes';
-import Test from './Test'
-import Variables from './Variables';
-import ArrayMethods from './ArrayMethods';
-import Destructuring from './Destructuring';
-import SpreadOperator from './SpreadOperator';
-import TernaryOperator from './TernaryOperator';
-import Imp from'./Imp';
-import JavascriptXML from './JavascriptXML';
-import Props from './Props'
-import Events from './Events'
-import Conditional from './Conditional'
+
+// import Arrow from './Arrow.jsx';
+// import Classes from './Classes';
+// import Test from './Test'
+// import Variables from './Variables';
+// import ArrayMethods from './ArrayMethods';
+// import Destructuring from './Destructuring';
+// import SpreadOperator from './SpreadOperator';
+// import TernaryOperator from './TernaryOperator';
+// import Imp from'./Imp';
+// import JavascriptXML from './JavascriptXML';
+// import Props from './Props'
+// import Events from './Events'
+// import Conditional from './Conditional'
+
+import Reactrouter from './Reactrouter';
+
+
 
 function App() {
   const mystyle = {
@@ -43,13 +48,15 @@ function App() {
     //   </header>
     // </div>
     <>
-      <h1 style={{backgroundColor:"red", color:"green", marginTop:"100px"}}>HELLO WORLD</h1>
+
+      {/* <h1 style={{backgroundColor:"red", color:"green", marginTop:"100px"}}>HELLO WORLD</h1>
       <h2 style={mystyle}>HELLO WORLD : {name}</h2>
       <h3 className='content'>HELLO WORLD</h3>
       <h4>HELLO WORLD</h4>
       <h5>HELLO WORLD</h5>
-      <h6>HELLO WORLD</h6>
-      <Classes/>
+      <h6>HELLO WORLD</h6> */}
+
+      {/* <Classes/>
       <Arrow/>
       <Test/>
       <Variables/>
@@ -61,7 +68,10 @@ function App() {
       <JavascriptXML/>
       <Props/>
       <Events/>
-      <Conditional/>
+      <Conditional/> */}
+
+      <Reactrouter/>
+      
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Destructuring() {
 
@@ -54,6 +55,7 @@ export default function Destructuring() {
 
   return (
     <>
+    <Link to='/'>Home</Link><br/>
         <div>
             <h1>Destructuring Start</h1>
         </div>
@@ -65,6 +67,7 @@ export default function Destructuring() {
         {msg}<br/>
         {msgOne}<br/>
         <hr/>
+        <Link to='/'>Home</Link><br/>
     </>
   )
 }

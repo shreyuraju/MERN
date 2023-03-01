@@ -423,4 +423,33 @@ They are
 /////////React Events
 
 ///react conditional render
+function Admitted() {
+        return <h3 style={{color:'green'}}>Admitted</h3>
+    }
 
+    function NotAdmitted() {
+        return <h3 style={{color:'red'}}>Not Admitted</h3>
+    }
+let course="bca"
+{course=="bca"?<Admitted/>:<NotAdmitted/>}
+
+
+//24022023
+
+//////Routing pages
+
+npm i -D react-router-dom
+
+//we need to create an component for Routing
+
+///hooks concepts on next class
+
+///27022023
+
+HOOKS CONCEPTS
+
+1. useState //its like a variable
+		//its a func to set value to variables, it can be used in constructors
+using usestate we can create a form, array, object
+
+2. useEffect //

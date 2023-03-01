@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TernaryOperator() {
 
@@ -10,11 +11,21 @@ export default function TernaryOperator() {
     let myStyle = {
         color:'blue'
     }
+///////////////////////////
+    function Admitted() {
+        return <h3 style={{color:'green'}}>Admitted</h3>
+    }
 
+    function NotAdmitted() {
+        return <h3 style={{color:'red'}}>Not Admitted</h3>
+    }
 
+    let course="bcs"
+    
 
   return (
     <>
+    <Link to='/'>Home</Link><br/>
         <div>
             <h1>TernaryOperator Start</h1>
 
@@ -33,6 +44,8 @@ export default function TernaryOperator() {
             :
                 <h2>b={b} is greater than 10</h2>
         }
+        {course=="bca"?<Admitted/>:<NotAdmitted/>}
+        <Link to='/'>Home</Link><br/>
     </>
   )
 }

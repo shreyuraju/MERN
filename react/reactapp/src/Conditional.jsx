@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Conditional() {
 
@@ -18,13 +19,27 @@ export default function Conditional() {
         else {
             return <MissedGoal/>
         }
-        abc?<MadeGoal/>:<MissedGoal/>
+
+        {abc?<MadeGoal/>:<MissedGoal/>}
+
     }
 
+    
+    // const CheckStatus = (props) => {
+    //     props.course=='bca'?
+    //         <Admitted/>
+    //     :
+    //         <NotAdmitted/>
+    // }
+
+    
   return (
     <div>
+        <Link to='/'>Home</Link><br/>
         <h1>Conditional starts</h1>
         <Goal isGoal={true} />
+        
+        <Link to='/'>Home</Link><br/>
     </div>
   )
 }

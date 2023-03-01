@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 export default function ArrayMethods() {
 
@@ -42,6 +42,7 @@ export default function ArrayMethods() {
 
   return (
     <>
+    <Link to='/'>Home</Link><br/>
       <div>
           <h1>ArrayMethods Start</h1>
           {mapfunc}<hr/>
@@ -71,6 +72,8 @@ export default function ArrayMethods() {
 
       </table>
       <hr/>
+
+      <Link to='/'>Home</Link><br/>
       
     </>
   )

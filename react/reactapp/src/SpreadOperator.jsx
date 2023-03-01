@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SpreadOperator() {
 
@@ -26,6 +27,7 @@ export default function SpreadOperator() {
 
   return (
     <>
+    <Link to='/'>Home</Link><br/>
         <div>
             <h1>SpreadOperator Start</h1>
         </div>
@@ -38,7 +40,7 @@ export default function SpreadOperator() {
         {two}<br/>
         {three}<br/>
         <hr/>
-
+        <Link to='/'>Home</Link><br/>
     </>
   )
 }

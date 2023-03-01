@@ -1,6 +1,6 @@
 import React from 'react'
 import { isValidElement } from 'react';
-
+import { Link } from 'react-router-dom'
 export default function() {
 
   const Cars = ["bmw","swift","benz","volve"];
@@ -68,6 +68,7 @@ export default function() {
 
   return (
     <div>
+      <Link to='/'>Home</Link><br/>
       <h1>Test Start</h1>
 
       {myCars}
@@ -102,7 +103,7 @@ export default function() {
       {msg.show()}
 
       <hr/>
-
+      <Link to='/'>Home</Link><br/>
     </div>
   )
 }

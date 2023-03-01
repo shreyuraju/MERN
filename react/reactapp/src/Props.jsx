@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Props() {
 
@@ -16,15 +17,16 @@ export default function Props() {
     const date = 2005
     const myElement = <Car brand={value} year={date} />
 
+
     /////
     function Hero(props) {
-        return <h2>I'm {props.brand}!</h2>
+        return <h3>I'm {props.brand}!</h3>
     }
 
     function Demo(props) {
         return (
             <>
-                <h2>Who is in my team?</h2>
+                <h3>Who is in my team?</h3>
                 <Hero brand={props.id} />
             </>
         );
@@ -43,8 +45,9 @@ export default function Props() {
             </>
         );
     }
-    //////
-    const fruits = ["apple", "banana","orange","mango"];
+
+//////
+    const fruitsArray = ["Apple", "Banana","Orange","Mango"];
 
     const DisplayFruits = (props) => {
         return (
@@ -52,38 +55,100 @@ export default function Props() {
         );
     }
 
-    // function lenFruits(props) {
-    //     return <h3>i have {props.len} fruits</h3>
-    // }
-    
-    // const dispFruit = (props) => {
-    //     return (
+/////
 
-    //     )
-    // }
+    function Vehicle(props) {
+        return <h3>I'm a {props.brand}!</h3>
+    }
+
+    function Showroom() {
+        const carName= "BMW";
+        return (
+            <>
+                <h3>Who lives in my Garage?</h3>
+                <Vehicle brand={fruitsArray} />
+            </>
+        );
+    }
+
+
+/////house work
+    
+    const LenFruits = (props) => {
+        return (
+            <>
+            <p>i have {props.len} fruits</p>
+            <p>They are</p>
+            </>
+        );
+    }
+
+    const DispFruit = (props) => {
+        return (
+            <>
+            <td>{props.index}.</td>
+            <td>{props.val}</td>
+            </> 
+        );
+    }
+
+    const DispFruitArray = () => {
+        return (
+            <>
+                <LenFruits len={fruitsArray.length}/>
+                <table border={1}>
+                    <tr>
+                        <th>sl no.</th>
+                        <th>Fruits</th>
+                    </tr>
+                    {fruitsArray.map(
+                        (item,index) => <tr key={index}><DispFruit index={index+1} val={item}/></tr>
+                    )}
+                </table>
+            </>
+        )
+    }
 
 
 
   return (
     <div>
+        <Link to='/'>Home</Link><br/>
         <h1>Props</h1>
         {/* {call} */}
         {myElement}
         <Demo id="Rama"/>
+        <Hero/>
         <Students/>
+        <Showroom/>
         <hr/>
-        {fruits.map((val)=>
+        {fruitsArray.map((val)=>
             <DisplayFruits item={val}/>
         )}
-        <hr/>
-        {/* {fruits.map(
-            (val,index) => {
-                return (
-                    
-                )
-            }
-        )} */}
 
+        <hr/>
+
+        {/*House work */}
+        <LenFruits len={fruitsArray.length}/>
+
+        <table border={1}>
+            <tr>
+                <th>sl no.</th>
+                <th>Fruits</th>
+            </tr>
+            {fruitsArray.map(
+                (item,index) => <tr><DispFruit index={index+1} val={item}/></tr>
+            )}
+        </table>
+        <hr/>
+
+
+        
+        <DispFruitArray/>
+
+
+<hr/>
+        <Link to='/'>Home</Link><br/>
     </div>
   )
 }

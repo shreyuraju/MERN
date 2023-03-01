@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Classes() {
     
@@ -125,6 +126,7 @@ export default function Classes() {
 
   return (
     <div>
+        <Link to='/'>Home</Link><br/>
         <h1>Classes Function Start</h1>
         {mycar.brand}<br/>
         {mybike.name="YAMAHA"}<br/>
@@ -136,7 +138,7 @@ export default function Classes() {
         {myVehicle.showmodel()}<br/>
         {myVehicle1.showmodel()}<br/>
         {myVehicle2.showmodel()}<br/>
-
+        <Link to='/'>Home</Link><br/>
 
 
     </div>

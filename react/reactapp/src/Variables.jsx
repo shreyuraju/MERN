@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Variables() {
 
@@ -20,6 +21,7 @@ export default function Variables() {
     
   return (
     <div>
+      <Link to='/'>Home</Link><br/>
         <h1>Variables Start</h1>
         {x}<br/>
         {y}<br/>
@@ -27,7 +29,7 @@ export default function Variables() {
         <a onClick={()=>Call()}>Call</a><br/>
         {/* {Name} */}
         {Hello()}
-        
+        <Link to='/'>Home</Link><br/>
     </div>
   )
 }
