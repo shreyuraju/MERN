@@ -22,6 +22,8 @@ export default function Home() {
             <Link to='/events'>Events</Link><br/> 
             <Link to='/usestate'>UseState</Link><br/> 
             <Link to='/useeffect'>UseEffect</Link><br/> 
+            <Link to='/propsdrill'>PropsDrill</Link><br/> 
+            <Link to='/usecontext'>UseContext</Link><br/> 
         </div>
     </>
   )

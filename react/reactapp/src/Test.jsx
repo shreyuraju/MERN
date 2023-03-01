@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { isValidElement } from 'react';
 import { Link } from 'react-router-dom'
 export default function() {
@@ -66,6 +66,62 @@ export default function() {
     let msg = new Stream('Shreyas','React Developer')
 
 
+    const studentDetails = [
+      {
+        name:"Rama",
+        rollno:10,
+        class:1
+      },
+      {
+        name:"Krishna",
+        rollno:11,
+        class:3
+      },
+      {
+        name:"Ravi",
+        rollno:16,
+        class:2
+      },
+      {
+        name:"Jhoseph",
+        rollno:17,
+        class:7
+      },
+      {
+        name:"Rahaman",
+        rollno:19,
+        class:5
+      },
+      {
+        name:"Meghanath",
+        rollno:1,
+        class:1
+      },
+    ];
+
+    const Display = (item) => {
+      return(
+        <>
+          <td>{item.rollno}</td>
+          <td>{item.name}</td>
+          <td>{item.class}</td>
+        </>
+      )
+    }
+
+//////
+const [user, setUser] = useState(
+  [
+    {
+      name:"Rahul",
+      phone:9870123456,
+      email:"rahul@mail.com"  
+    }
+  ]
+)
+
+    
+
   return (
     <div>
       <Link to='/'>Home</Link><br/>
@@ -102,6 +158,29 @@ export default function() {
 
       {msg.show()}
 
+      <hr/>
+
+      <table border={1}>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Class</th>
+        </tr>
+        {studentDetails.map((item)=>{
+          return(
+              <tr>
+                <Display rollno={item.rollno} name={item.name} class={item.class}/>
+              </tr>
+          );
+              
+            })}
+      </table>
+      <hr/>
+
+      <input type="text" name="name" value={user[0]?.name}/><br/>
+      <input type="tel" name="phone" value={user[0]?.phone}/><br/>
+      <input type="email" name="email" value={user[0]?.email}/><br/>
+      
       <hr/>
       <Link to='/'>Home</Link><br/>
     </div>
