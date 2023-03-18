@@ -20,6 +20,9 @@ import UseState from './UseState.jsx';
 import UseEffect from './UseEffect.jsx';
 import PropsDrill from './PropsDrill.jsx';
 import UseContext from './UseContext';
+import Autocomplete from './MUI/Autocomplete';
+import Grouped from './MUI/Grouped';
+import Insert from './LocalStorage/Insert'
 
 export default function Reactrouter() {
   return (
@@ -44,6 +47,10 @@ export default function Reactrouter() {
                 <Route exact path='/useeffect' element={<UseEffect/>}></Route>
                 <Route exact path='/propsdrill' element={<PropsDrill/>}></Route>
                 <Route exact path='/usecontext' element={<UseContext/>} />
+                <Route exact path='/autocomplete' element={<Autocomplete />} />
+                <Route exact path='/grouped' element={<Grouped />} />
+                <Route exact path='/insert' element={<Insert />} />
+
             </Routes>
         </BrowserRouter>
     </div>

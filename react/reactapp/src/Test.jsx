@@ -109,6 +109,8 @@ export default function() {
       )
     }
 
+    let a= localStorage.getItem("student");
+
 //////
 const [user, setUser] = useState(
   [
@@ -176,9 +178,9 @@ const [user, setUser] = useState(
             })}
       </table>
       <hr/>
-
-      <input type="text" name="name" value={user[0]?.name}/><br/>
-      <input type="tel" name="phone" value={user[0]?.phone}/><br/>
+local storage{a}
+      <input type="text" name="name" value={user[0]?.name} /><br/>
+      <input type="tel" name="phone" value={user[0]?.phone} /><br/>
       <input type="email" name="email" value={user[0]?.email}/><br/>
       
       <hr/>

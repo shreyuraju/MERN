@@ -23,8 +23,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 //creating react app                       //if you have already has folder go inside and run this cmd
 1. npx create-react-app reactapp      ||    npm install //to download node_modules || npm update
 
-2. npm react-router-dom --force       npm i --force
-
+2. npm i react-router-dom --force       npm i --force
+npm cache clean --forcenvm 
 //to run react-app change directory to appfolder
 
 3. npm start
@@ -457,3 +457,19 @@ using usestate we can create a form, array, object
 
 
 //01032023
+
+useContext ///passing value by wrapping function
+//VERSEL website for hosting
+
+
+//03032023
+
+MUI //Material User Interface
+
+1. go to MUI.com -> get started
+2. install default coomponent
+3. icons
+4. style components
+
+
+select components

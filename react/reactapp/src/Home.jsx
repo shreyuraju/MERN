@@ -24,6 +24,9 @@ export default function Home() {
             <Link to='/useeffect'>UseEffect</Link><br/> 
             <Link to='/propsdrill'>PropsDrill</Link><br/> 
             <Link to='/usecontext'>UseContext</Link><br/> 
+            <Link to='/autocomplete'>Autocomplete</Link><br/>
+            <Link to='/grouped'>Grouped</Link><br/>
+            <Link to='/insert'>Insert</Link><br/>
         </div>
     </>
   )
